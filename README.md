@@ -16,7 +16,7 @@ and concatenation only. No parsers, no libraries — pure string primitives.
 |---|-----------|--------|--------|
 | 1 | Update Page Metadata | `challenge/01-metadata` | ✅ Done |
 | 2 | Update Stylesheet and Script Sources | `challenge/02-assets` | ✅ Done |
-| 3 | Inject Heading Tags | `challenge/03-headings` | ⏳ Pending |
+| 3 | Inject Heading Tags | `challenge/03-headings` | ✅ Done |
 | 4 | Add Paragraph and Image Tags | `challenge/04-content` | ⏳ Pending |
 | 5 | Full Page Builder | `challenge/05-full-page` | ⏳ Pending |
 
@@ -50,4 +50,19 @@ the updated `lang` attribute and `<title>` tag render correctly.
 ![Challenge 2 Terminal](screenshots/challenge_02_terminal.png)
 
 **Browser preview:** After opening the HTML file in a browser, use **View Page Source** to confirm the `href` and `src` values were updated correctly. Your terminal screenshot must show the printed `<link>` and `<script>` lines clearly enough to read the new filenames.
+
+
+### Challenge 3 — Inject Heading Tags
+
+**Concepts:** `.find()`, `.split()` on a specific separator, string concatenation, multi-line string building
+
+**Solution file:** `challenge_03_headings.py`
+
+**HTML output file:** `html_outputs/challenge_03_output.html`
+
+**Terminal output:**
+
+![Challenge 3 Terminal](screenshots/challenge_03_terminal.png)
+
+**Browser preview:**  Open the HTML output in a browser — the `<h1>`, `<h2>`, and `<h3>` headings must be visible on the page with correct visual hierarchy. A blank page usually means the heading tags ended up outside `<body>` or contain a syntax error — check the source.
 
